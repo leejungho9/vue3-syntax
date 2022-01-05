@@ -34,6 +34,9 @@ module.exports = {
           },
           "svg": "always",
           "math": "always"
+        }],
+        "vue/multi-word-component-names": ["error", {
+          "ignores": ["Fruits"]
         }]
     }
   }
