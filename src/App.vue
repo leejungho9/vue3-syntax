@@ -2,33 +2,45 @@
   <h1 @click="increase">
     {{ count }} / {{ doubleCount }}
   </h1>
-  <h1>
-    {{ message }} / {{ reversedMessage }}
+  <h1 @click="changeMessage">
+    {{ message }} / {{ reverseMessage }}
   </h1>
 </template>
 
-
-<script type= text/javascript > 
+<script>
 export default {
-  data() {
+  data () {
     return {
-      message : 'Hello world',
-      count : 0
+      count : 0,
+      message: 'hello'
     }
   },
   computed : {
-    doubleCount () {
-      return this.count * 2
+    doubleCount() {
+      return this.count *2
     },
-    reversedMessage () {
+    reverseMessage() {
       return this.message.split('').reverse().join('')
     }
   },
-  methods : {
-    increase () {
-      this.count +=1
+  watch : {
+    message(newValue) {
+      console.log(newValue)
     }
-  }
+  },
+  created () {
+    console.log(this.message)
+  },
+  mounted () {
+    console.log(this.count)
+  },
+   methods : {
+    increase () {
+      this.count += 1
+    },
+    changeMessage() {
+      this.message = 'Good?'
+    },
+  },
 }
-
 </script>
