@@ -32,13 +32,13 @@ watch : 데이터를 감시하는 용도의 옵션 , 계산된 데이터도 감�
 * 둘의 차이 v-show를 쓰면 항상 렌더링 되어 DOM에 남아있다는 점, v-show는 단순히 엘리먼트의 display 속성만 전환하는 것
 
 ### 리스트 렌더링
-push()
-pop()
-shift()
-unshift()
-splice()
-sort()
-reverse()
+- push()
+- pop()
+- shift()
+- unshift()
+- splice()
+- sort()
+- reverse()
 
 ### 이벤트 핸들링( v-on: )
 * @click=“handler() : 인수를 넣어주지 않으면 이벤트객체가 넘어가고 handler(‘hi’)처럼 인수가 들어가면 들어간 인수를 넘겨줌
