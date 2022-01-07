@@ -66,3 +66,24 @@ watch : 데이터를 감시하는 용도의 옵션 , 계산된 데이터도 감�
 ### 이벤트 캡처(Event Capture)
 이벤트 캡처는 이벤트 버블링과 반대 방향으로 상위요소에서 하위요소로 전파되는 방식
 
+### 키 수식어 
+```
+ex : <input type="text" @keydown />
+```
+
+### v-model로 양뱡향 라운딩
+
+#### v-model 주의사항
+v-model을 사용해서 한글을 사용할 때는 하나의 글자가 완성되기 전까지는 완성되지 않음
+
+### v-model 수식어
+* @change : tab, enter, 블록해제하면 반영되는 기능
+* == v-mode.lazy 도 같은 효과
+* == v-mode.number : number인 값만 받아와 출력해줌
+* == v-mode.trim : 제일 앞쪽과 뒤쪽의 공백을 지워줌
+
+### components
+
+
+
+
