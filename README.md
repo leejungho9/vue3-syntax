@@ -58,5 +58,11 @@ watch : 데이터를 감시하는 용도의 옵션 , 계산된 데이터도 감�
 6. .passive : 이벤트와 로직의 처리를 독립시켜줌
 ==  == vue안에서 @wheel.passive="handler"으로 단순화해서 사용
 
-
+### 이벤트 버블링(Event Bubbling)
+이벤트 버블링은 특정 화면 요소에서 이벤트가 발생했을 때 해당 이벤트가 상위 화면 요소들로 전파되는 방식
+#### 이벤트 버블링 방지하는 법
+* script : event.stoppropagation() 
+* vue : @click.stop= "" 
+### 이벤트 캡처(Event Capture)
+이벤트 캡처는 이벤트 버블링과 반대 방향으로 상위요소에서 하위요소로 전파되는 방식
 
